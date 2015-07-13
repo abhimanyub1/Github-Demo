@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Assurant IMV</title>
+	<link href="css/ui-darkness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/jquery-1.8.3.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<script src="js/modernizr.custom.25376.js"></script>
+	<script>
+	$(function() {
+		
+		$( "#accordion" ).accordion({      heightStyle: "content"    });
+		
+
+		
+		var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+		];
+		$( "#autocomplete" ).autocomplete({
+			source: availableTags
+		});
+		
+
+		
+		$("#button").button();
+		$("#button1").button();
+		$( "#radioset" ).buttonset();
+		
+
+		
+		$( "#tabs" ).tabs();
+		$( "#tabs1" ).tabs();
+
+		
+		$( "#dialog" ).dialog({
+			autoOpen: false,
+			width: 400,
+			buttons: [
+				{
+					text: "Ok",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				},
+				{
+					text: "Cancel",
+					click: function() {
+						$( this ).dialog( "close" );
+					}
+				}
+			]
+		});
+
+		// Link to open the dialog
+		$( "#dialog-link" ).click(function( event ) {
+			$( "#dialog" ).dialog( "open" );
+			event.preventDefault();
+		});
+		
+
+		
+		$( "#datepicker" ).datepicker({
+			inline: true
+		});
+		
+
+		
+		$( "#slider" ).slider({
+			range: true,
+			values: [ 17, 67 ]
+		});
+		
+
+		
+		$( "#progressbar" ).progressbar({
+			value: 20
+		});
+		
+
+		// Hover states on the static widgets
+		$( "#dialog-link, #icons li" ).hover(
+			function() {
+				$( this ).addClass( "ui-state-hover" );
+			},
+			function() {
+				$( this ).removeClass( "ui-state-hover" );
+			}
+		);
+	});
+	
+	function popUp(strURL,strType,strHeight,strWidth) {
+var strOptions="";
+if (strType=="console") strOptions="resizable,height="+strHeight+",width="+strWidth;
+if (strType=="fixed") strOptions="status,height="+strHeight+",width="+strWidth;
+if (strType=="elastic") strOptions="toolbar,menubar,scrollbars,resizable,location,height="+strHeight+",width="+strWidth;
+window.open(strURL, 'newWin', strOptions);
+}
+	</script>
+	
+	<style>
+	body{
+		font: 80.0% "Trebuchet MS", sans-serif;
+		margin: 10px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	    .auto-style6 {
+            text-align: center;
+            width: 77px;
+        }
+        .auto-style7 {
+            width: 36px;
+            text-align: center;
+        }
+        .auto-style9 {
+            width: 77px;
+        }
+        .auto-style10 {
+            width: 36px;
+        }
+	</style>
+	
+</head>
+<body background="">
+<div id="perspective" class="perspective effect-rotateleft">
+			<div class="container">
+				<div class="wrapper"> 
+	 
+<div id="button" value="Reload Page" align="right" onClick="document.location.reload(true)" style="float: right;">REFRESH</div>
+        <img alt="" src="Images/Capture.PNG" style="text-align: center; width: 408px; height: 83px; float: right; margin-left: 156px;" /><img alt="" src="Images/ASP-BL.jpg" style="width: 203px; height: 71px" /><br/><br/>
+
+														
+		
+		
+<div id="accordion">
+	<h3>Welcome to Integrated Management View</h3>
+	<div>Welcome to Assurant`s Integrated Management View . Gain real time end-to-end visibility into Smartflow with IMV's simple and flexible user interface .
+         The single console provides a holistic, service-centric view which eliminates the need  to use multiple consoles, helping associates to focus more on real issues.
+        
+        <br />
+       
+
+
+
+</div>
+
+    <h3>Login</h3>
+	<div>
+<script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/login/-/58',height:275 });
+</script>
+        <div id="button1" value="Reload Page" align="center" onClick="document.location.reload(true)" style="float:none; background-color: #00CC99; position: relative; color: #000000; text-transform: none; font-style: normal; font-weight: 800; font-size: large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Replicate Credentials</div>
+        <br /> <b>
+        <br />
+        <br />
+        Please click "Replicate credentials" button to populate credentials across different portlets. </b>
+        <br />
+        <br />
+        <table border="1" style="border-width: thin; border-color: #669999; width: 32%; font-family: Calibri; font-size: medium; table-layout: auto; empty-cells: hide; caption-side: inherit; text-align: center; vertical-align: middle; line-height: normal;">
+            <tr>
+                <td class="auto-style9" style="background-color: #009999; position: relative"><strong>Username</strong></td>
+                <td class="auto-style10" style="background-color: #009999; position: relative"><strong>Password</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">oe8958</td>
+                <td class="auto-style7">summer15</td>
+            </tr>
+        </table>
+        <br />
+</div>
+	<h3>Production Views</h3>
+		<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Business View</a></li>
+		<li><a href="#tabs-6">SLA View</a></li>
+		<li><a href="#tabs-7">Item Board</a></li>
+		<li><a href="#tabs-4">Database View</a></li>
+        <li><a href="#tabs-8">Application Performance</a></li>
+		<li><a href="#tabs-5">Workflow Manager</a></li>
+		<li><a href="#tabs-2">Data Capture</a></li>
+		<li><a href="#tabs-3">OCR</a></li>
+		
+	</ul>
+	<div id="tabs-1"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Liferay.Widget({ url: 'http://sdp.assurant.com/widget/web/oe8958/views/-/usm_WAR_usm_INSTANCE_wJye63svje7H',height:600 });
+</script></div>
+	<div id="tabs-2"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/dashboards/-/qoschart_WAR_qoschart_INSTANCE_14amjABJDOzy',height:700});
+</script></div>
+	<div id="tabs-3"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/dashboards/-/qoschart_WAR_qoschart_INSTANCE_mN8v99daOYNZ',height:600});
+</script></div>
+<div id="tabs-4">Coming Soon..</div>
+<div id="tabs-5"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/accounts/-/qoschart_WAR_qoschart_INSTANCE_2OProVVA6fYw',height:600});
+</script></div>
+<div id="tabs-6">Coming Soon..</div>
+<div id="tabs-7"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+	Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/repo/-/qoschart_WAR_qoschart_INSTANCE_vPxoOR63PGF6',height:600});
+</script></div>
+<div id="tabs-8">Coming Soon..</div>
+
+
+
+</div>
+	<h3>Production Alarms</h3>
+	<div><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+Liferay.Widget({ url: 'http://sdp.assurant.com/widget/user/oe8958/custom-alarms/-/alarmconsole_WAR_alarmconsole_INSTANCE_7vI8lcmNji9f',height:500});
+</script></div>
+
+
+ <h3>Master Inventory</h3>
+	<div>
+<script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Liferay.Widget({ url: 'http://10.100.4.105/Smartflow_MasterInventory_Web_1.5.htm',height:700 });
+</script></div>
+
+	<h3>Contact</h3>
+	<div id="tabs1">
+	<ul>
+	<li><a href="#tabs1-11">ACT DBA</a></li>
+	<li><a href="#tabs1-12">SMARTFLOW</a></li>
+	<li><a href="#tabs1-13">IMV</a></li></ul>
+	<div id="tabs1-13"> Incase of any queries please email at <a href="mailto:abhimanyu.bhatnagar@assurant.com?Subject=IMV">IMV Assurant Support</a> .This interface is developed in-house and its sole purpose is to assist the end user in accessing the dashboards.Feel free to contact the author <a href="mailto:abhimanyu.bhatnagar@assurant.com?Subject=IMV">Abhimanyu Bhatnagar</a> for any suggestions related to this interface. <br/><br/><br/>
+ </div>
+<div id="tabs1-12"><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+Liferay.Widget({ url: 'http://w2-msp.assurant.com/inc/ocs/search/advanced/workgroups?formSubmission=x&name=SMARTFLOW&scheduledStatus=all',height:500});
+</script> </div>
+<div id="tabs1-11"><br/><script src="http://sdp.assurant.com/html/js/liferay/widget.js" type="text/javascript"></script>
+<script type="text/javascript">
+Liferay.Widget({ url: 'http://w2-msp.assurant.com/inc/ocs/search/workgroups?keywords=DBA++SQL&formSubmission=x&matchType=contains',height:500});
+</script> </div>
+
+</div>
+
+    <h3>How to `s</h3>
+	<div> Problem in logging in ?
+        <br />
+        <br />
+        <strong>Instructions</strong><br /><br />
+        1. Navigate to the slider &quot;Login&quot;<br />
+        2. Enter the username and password in the textboxes.<br />
+        3. Click Login button to authenticate. <br />
+        4. Please click &quot;Refresh&quot; on top right hand corner to replicate credentials across all sources.
+        <br />
+        <br />
+        <table border="1" style="border-width: thin; border-color: #669999; width: 32%; font-family: Calibri; font-size: medium; table-layout: auto; empty-cells: hide; caption-side: inherit; text-align: center; vertical-align: middle; line-height: normal;">
+            <tr>
+                <td class="auto-style9" style="background-color: #009999; position: relative"><strong>Username</strong></td>
+                <td class="auto-style10" style="background-color: #009999; position: relative"><strong>Password</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">oe8958</td>
+                <td class="auto-style7">summer15</td>
+            </tr>
+        </table>
+        </div>
+
+</div>
+	
+	<!-- <div align="right"> -->
+							<p><b><button id="showMenu" style="font-weight: bold" >Show Applications</button></b></p>
+												<!--	</div> -->
+	
+													
+				
+	 </div><!-- wrapper -->
+			</div><!-- /container -->
+			<nav class="outer-nav right vertical">
+				<a href="http://rc.assurant.com/" class="icon-home" onclick="popUp(this.href,'console',900,700);return false;" target="_blank">Request Center Portal</a>
+				<a href="http://intra.w1.assurant.com/businessdisruptions/forum_topics.asp?FID=124" onclick="popUp(this.href,'console',900,700);return false;" target="_blank" class="icon-news">Major Incident Portal</a>
+				<a href="http://10.100.4.105/Proforms/"  class="icon-image" onclick="popUp(this.href,'console',900,700);return false;" target="_blank">Issues with Datacapture ? Proforms</a>
+				<!--<a href="#" class="icon-upload">Sharepoint</a>-->
+				<a href="http://10.100.4.105/SF%20Documentation/" class="icon-star" onclick="popUp(this.href,'console',900,700);return false;" target="_blank" >SF Reference Documentation</a>
+				<!--<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>-->
+			</nav>
+		</div><!-- /perspective -->
+		<script src="js/classie.js"></script>
+		<script src="js/menu.js"></script>
+	
+</body>
+</html>
+
